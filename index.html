@@ -9,17 +9,15 @@
 <body>
   <header>
     <h1>
-      <center>Ye Olde Donut Shoppe
+      <center>Ye Olde Donut Shoppe: required supply to satisfy customer demand.
       </center>
     </h1>
   </header>
+
   <main>
-
-
-    <table style="height: 124px;" width="582">
-    <tbody>
-      <tr>
-        <td>Hours</td>
+    <table id="originalShoppes">
+    <tr id="shopHours">
+      <th></th>
         <td>7:00</td>
         <td>8:00</td>
         <td>9:00</td>
@@ -33,25 +31,60 @@
         <td>17:00</td>
         <td>Total</td>
       </tr>
-      <tr id="Downtown">
-        <th>Downtown</th>
-      </tr>
-      <tr id="CapitolHill">
-        <th>Capitol Hill</th>
-      </tr>
-      <tr id="SouthLakeUnion">
-        <th>South Lake Union</th>
-      </tr>
-      <tr id="Wedgewood">
-        <th>Wedgewood</th>
-      </tr>
-      <tr id="Ballard">
-        <th>Ballard</th>
-      </tr>
-    </tbody>
-    </table>
+    <tr id="downtown">
+      <th>Downtown</th>
+    </tr>
+    <tr id="capitolhill">
+      <th>Capitol Hill</th>
+    </tr>
+    <tr id="SouthLakeUnion">
+      <th>South Lake Union</th>
+    </tr>
+    <tr id="Wedgewood">
+      <th>Wedgewood</th>
+    </tr>
+    <tr id ="ballard">
+      <th>Ballard</th>
+    </tr>
+    <tr id='newShoppe'>
+      <th>New Shoppes</th>
+    </tr>
+  </table>
+
+
+
+  <aside>
+    <p>
+      <form id="newShoppeInit">
+      <label for="storeName">New Locality
+        <input type="text" id="newLocality" name="locale">
+      </label>
+    </p>
+  <hr>
+    <p>
+      <label for="minCustomers">Min Patron/Hr
+        <input type="text" id="newMinCustomers" name="min">
+      </label>
+    </p>
+  <hr>
+    <p>
+      <label for="maxCustomers">Max Patron/Hr
+        <input type="text" id="newMaxCustomers" name="max">
+      </label>
+    </p>
+  <hr>
+    <p>
+      <label for="averagePurchasePerPatron">Average Donuts/Patron
+        <input type="text" id="newAvgPP" name="average">
+      </label>
+        <button type="submit" id="newShoppeSubmit">Add Shoppe</button>
+      </form>
+    </p>
+  <hr>
+  </aside>
 
   </main>
+
   <script src = "js/ye_olde_donut_shop.js"></script>
 </body>
 </html>
