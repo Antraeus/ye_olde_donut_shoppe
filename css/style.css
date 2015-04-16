@@ -51,7 +51,7 @@ html {
 
 }
 body {
-    background-image: url("background.jpg") #d3ebe9 no-repeat right top;
+    background-image: url("images/background.jpg") #d3ebe9 no-repeat right top;
 }
 header {
   font-family: 'font-family: 'Lobster', sans-serif;', cursive;
@@ -60,7 +60,7 @@ header {
   span {
   float:top;
   background-color: #0f8723;
-  position: left -10px;
+  position: left 10px;
   border-radius: 15px;
 }
 
