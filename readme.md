@@ -1,7 +1,8 @@
-## Ye Olde Donut Shoppe
-# Version 2.0
-Asked by this assignment to incorporate a form event in order to add new shops to the render function instead.
+## Donutella's Donut Shoppe Schedule Constructor
+
+
+
 ## Credits
 Will Haeck
-
-Thanks Tokidoki for providing the inspired mascot, Donutella!
+SOLVM CSS-Style Snippet: http://codepen.io/solvm/
+Thanks Tokidoki for providing the art for an inspired mascot, Donutella!

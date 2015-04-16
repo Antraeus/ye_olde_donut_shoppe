@@ -16,7 +16,7 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
+  vertical-align: relative;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -37,61 +37,188 @@ q:before, q:after {
   content: '';
   content: none;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-
-
-
 
 
 html {
+  font-size: 20px;
+  box-sizing: border-box;
+  background-image: url("images/background.jpg") no-repeat right;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+hr.style {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: overline #4b0082;
 
 }
+
+a:active {
+    text-decoration: underline;
+}
+
+nav
+ {
+  background-color: #4b0082;
+  font-family: 'font-family: 'Signika', sans-serif;', cursive;
+  border: 5px #4b0082 solid;
+  background-color: #ff0;
+  border-bottom-right-radius: 15px;
+  box-shadow: -10px 10px 0 #ff93a6, -20px 20px 0 #0cc;
+  position: absolute;
+}
+
 body {
-    background-image: url("images/background.jpg") #d3ebe9 no-repeat right top;
+  background-color: #0fc;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+.center {
+  max-width: 50%;
+}
+.btn {
+  border: 5px #4b0082 solid;
+  color: current;
+  display: block;
+  font-family: 'Signika';
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  padding: 0.75rem;
+  position: relative;
+  text-decoration: overline #4b0082;
+  text-transform: inherit;
+  border-radius: 20px;
+}
+.btn::before {
+  content: "";
+  background-color: #ff0;
+  border-radius: 15px;
+  box-shadow: -10px 10px 0 #ff93a6, -20px 20px 0 #0cc;
+  position: absolute;
+  left: -0.75rem;
+  top: 0.5rem;
+  height: 4.25rem;
+  width: 102%;
+  z-index: -1;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+.btn:hover::before {
+  box-shadow: none;
+  left: 0;
+  top: 0;
+}
+
+.btn2 {
+  border: 2px #4b0082 solid;
+  color: current;
+  display: block;
+  font-family: 'Signika';
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem;
+  position: relative;
+  text-decoration: overline #4b0082;
+  text-transform: inherit;
+  border-radius: 20px;
+  background-color: #ff0;
+}
+.btn2::before {
+  background-color: #ff0;
+  border-radius: 15px;
+  box-shadow: -10px 10px 0 #ff93a6, -20px 20px 0 #0cc;
+  position: absolute;
+  left: -0.5rem;
+  top: 0.25rem;
+  height: 2.25rem;
+  width: 102%;
+  z-index: -0.5;
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+.btn2:hover::before {
+  box-shadow: none;
+  left: 0;
+  top: 0;
+}
+
+h1 div {
+  font-family: 'font-family: 'Lobster', sans-serif;', cursive;
+}
+
+
 }
 header {
   font-family: 'font-family: 'Lobster', sans-serif;', cursive;
   color: #ffebff;
 }
-  span {
-  float:top;
-  background-color: #0f8723;
-  position: left 10px;
-  border-radius: 15px;
-}
 
+form {
+
+}
 
 
 aside {
   float: right;
   background-color: #f0dff0;
-  border-radius: 25px;
   font-family: 'font-family: 'Signika', sans-serif;', cursive;
+  box-shadow: -10px 10px 0 #ff93a6, -20px 20px 0 #0cc;
+  border-top-left-radius: 15px;
 }
 
 tr {
-background-color: #f0dff0;
-border-radius: 25px;
+background-color: #ff0;
+border-radius: 15px;
 opacity: 0.8;
 
 }
 tr th {
 font-family: 'Signika', sans-serif;
-color: #ffebff;
-background-color: #0f8723;
+color: #4b0082;
+background-color: #ff0;
 border-radius: 20px;
-border-spacing:5px;
-margin: 5px;
+font-size: 0.75rem;
+
 
 }
 tr td {
-  border-radius: 5px;
+  background-color: #0fc;
+  font-family: 'Lobster', sans-serif;
+  font-size: 0.75rem;
+
 }
 
+tr td:last-child {
+  font-family: 'Signika', sans-serif;
+}
 
 .numberForm {
 float: right;
