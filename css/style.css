@@ -185,6 +185,13 @@ form {
 
 }
 
+table img {
+    max-width:50%;
+    float: right;
+    position: relative;
+    top: 10px;
+    right: -100px;
+}
 
 aside {
   float: right;
