@@ -8,29 +8,29 @@
   </head>
 
 <body background="background.jpg">
+  <nav><h3><a href="#">ABOUT</a>&nbsp;&nbsp;&nbsp;<a href="#">DIRECTIONS</a>&nbsp;&nbsp;&nbsp;<a href="#">ORDER</a><hr class="style"></h3></nav>
   <header>
     <h1>
     <img src="images/donutella.png">
-    <span>Donutella's Donuts Schedule</span>
+    <div class="btn">Donutella's Donuts</div>
     </h1>
   </header>
-
   <main>
     <table id="originalShoppes">
     <tr id="shopHours">
-      <th>Hours</th>
-        <td>|7:00</td>
-        <td>8:00|</td>
-        <td>|9:00</td>
-        <td>10:00|</td>
-        <td>|11:00</td>
-        <td>12:00|</td>
-        <td>|13:00</td>
-        <td>14:00|</td>
-        <td>|15:00</td>
-        <td>16:00|</td>
-        <td>|17:00</td>
-        <td>||Total</td>
+      <th>HOUR</th>
+        <td>7:00</td>
+        <td>8:00</td>
+        <td>9:00</td>
+        <td>10:00</td>
+        <td>11:00</td>
+        <td>12:00</td>
+        <td>13:00</td>
+        <td>14:00</td>
+        <td>15:00</td>
+        <td>16:00</td>
+        <td>17:00</td>
+        <td><h2>Total</h2></td>
       </tr>
     <tr id="downtown">
       <th><h2>Downtown</h2></th>
@@ -53,36 +53,36 @@
   </table>
 
 
-
-  <aside>
+<aside>
+  <section>
     <p>
       <form id="newShoppeInit">
-      <label for="storeName">New Locality
+      <label for="storeName">&nbsp;New Locality
         <input type="text" id="newLocality" name="locale">
       </label>
     </p>
-  <hr>
+  <hr class="style">
     <p>
-      <label for="minCustomers">Min Patron/Hr
+      <label for="minCustomers">&nbsp;Min Patron/Hr
         <input type="text" id="newMinCustomers" name="min">
       </label>
     </p>
-  <hr>
+  <hr class="style">
     <p>
-      <label for="maxCustomers">Max Patron/Hr
+      <label for="maxCustomers">&nbsp;Max Patron/Hr
         <input type="text" id="newMaxCustomers" name="max">
       </label>
     </p>
-  <hr>
+  <hr class="style">
     <p>
-      <label for="averagePurchasePerPatron">Average Donuts/Patron
+      <label for="averagePurchasePerPatron">&nbsp;Average Donuts/Patron
         <input type="text" id="newAvgPP" name="average">
       </label>
-        <button type="submit" id="newShoppeSubmit">Add Shoppe</button>
+        <div class="button"><button type="submit" class="btn2">Add Shoppe</button></div>
       </form>
     </p>
-  <hr>
-  </aside>
+  </section>
+</aside>
 
   </main>
 
